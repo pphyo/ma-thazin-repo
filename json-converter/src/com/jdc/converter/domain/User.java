@@ -3,21 +3,20 @@ package com.jdc.converter.domain;
 @Json
 public class User {
 
-	// convert
 	@JsonField
 	private String username;
 
-	// convert
-	@JsonField(name = "userEmail")
+	@JsonField
 	private String email;
 
-	// convert
-	@JsonField
 	private String password;
 
+	@JsonField(name = "phone_no")
 	private String phone;
+	
+	@JsonField
+	private Character grade;
 
-	// convert
 	@JsonField
 	private int age;
 
@@ -51,6 +50,14 @@ public class User {
 
 	public void setPhone(String phone) {
 		this.phone = phone;
+	}
+	
+	public char getGrade() {
+		return grade;
+	}
+	
+	public void setGrade(char grade) {
+		this.grade = grade;
 	}
 
 	public int getAge() {

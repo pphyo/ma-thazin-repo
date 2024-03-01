@@ -12,6 +12,7 @@ public class JsonConverterApp {
 			user.setEmail("pyaephyo.jdc@gmail.com");
 			user.setPassword("pyaephyo");
 			user.setPhone("0943939393");
+			user.setGrade('A');
 			user.setAge(25);
 			
 			var converter = new JsonConverter();

@@ -17,17 +17,18 @@ public class JsonConverter {
 	
 	
 	private String getJson(User user) throws IllegalArgumentException, IllegalAccessException {
-		String[] keys = new String[4];
-		Object[] values = new Object[4];
+		String[] keys = new String[5];
+		Object[] values = new Object[5];
 		
-		var fields = user.getClass().getFields();
+		var fields = user.getClass().getDeclaredFields();
+		
+		var counter = 0;
 		
 		for(var field : fields) {
-			var counter = 0;
 			if(field.isAnnotationPresent(JsonField.class)) {
 				field.setAccessible(true);
 				keys[counter] = getKey(field);
-				values[counter] = field.get(user);
+				values[counter] = getValue(field, user);
 				counter ++;
 			}
 		}
@@ -46,6 +47,17 @@ public class JsonConverter {
 		sb.append("\n}");
 		
 		return sb.toString();
+	}
+	
+	private Object getValue(Field field, User user) throws IllegalAccessException {
+		if(isEqualsClass(field, String.class) || isEqualsClass(field, Character.class) || isEqualsClass(field, char.class)) {
+			return "\"%s\"".formatted(field.get(user));
+		}
+		return field.get(user);
+	}
+	
+	private boolean isEqualsClass(Field field, Class<?> type) {
+		return field.getType().equals(type);
 	}
 	
 	private String getKey(Field field) {
