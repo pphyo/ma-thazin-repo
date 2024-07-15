@@ -6,6 +6,7 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import java.util.Date;
+import java.util.List;
 import java.util.Vector;
 
 import org.junit.jupiter.api.Disabled;
@@ -19,6 +20,11 @@ import com.jdc.generic.multi.OrderedPair;
 import com.jdc.generic.multi.Pair;
 
 public class GenericeDemoTest {
+	
+	@Test
+	void test_for_type_inference() {
+		Util.printList(List.of(1L, 2L));
+	}
 	
 	@Test
 	void test_for_subtype_inheritance() {
@@ -61,14 +67,14 @@ public class GenericeDemoTest {
 //		
 //		System.out.println(rawBox.getData());
 		
-		GenericBox rawBox2 = new GenericBox();
-		GenericBox<Integer> gBox2 = rawBox2;
+//		GenericBox rawBox2 = new GenericBox();
+//		GenericBox<Integer> gBox2 = rawBox2;
 	}
 	
 	@Test
 	void test_for_multi_types() {
 		
-		Pair<Integer, Object> intObjPair = new OrderedPair<>(null, null);
+//		Pair<Integer, Object> intObjPair = new OrderedPair<>(null, null);
 		
 //		Pair<String, Integer> strIntPair1 = new OrderedPair<>("One", 1);
 //		Pair<String, Integer> strIntPair2 = new OrderedPair<>("Two", 2);

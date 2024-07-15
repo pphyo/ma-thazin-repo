@@ -3,7 +3,7 @@ package com.jdc.app.anno;
 @Init(ok = false, value = { "Hello", "Java", "Angular" })
 public class Student {
 
-	private static int count;
+//	private static int count;
 	private String name;
 	
 	public Student() {
@@ -18,7 +18,7 @@ public class Student {
 	
 }
 
-@Init
+@Init(ok = true)
 interface CanLearn {
 	void learn();
 }
