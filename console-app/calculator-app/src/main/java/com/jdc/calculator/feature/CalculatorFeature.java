@@ -3,9 +3,9 @@ package com.jdc.calculator.feature;
 import com.jdc.core.AbstractFeature;
 import com.jdc.core.InputUtils;
 
-public abstract class CalcuatorFeature extends AbstractFeature {
+public abstract class CalculatorFeature extends AbstractFeature {
 
-	public CalcuatorFeature(int id, String name) {
+	public CalculatorFeature(int id, String name) {
 		super(id, name);
 	}
 	

@@ -1,6 +1,6 @@
 package com.jdc.calculator.feature;
 
-public class FeatureForAdd extends CalcuatorFeature {
+public class FeatureForAdd extends CalculatorFeature {
 
 	public FeatureForAdd() {
 		super(1, "Add");

@@ -1,6 +1,6 @@
 package com.jdc.calculator.feature;
 
-public class FeatureForTakeaway extends CalcuatorFeature {
+public class FeatureForTakeaway extends CalculatorFeature {
 	
 	public FeatureForTakeaway() {
 		super(2, "Difference");

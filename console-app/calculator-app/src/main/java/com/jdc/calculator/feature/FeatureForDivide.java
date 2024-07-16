@@ -1,6 +1,6 @@
 package com.jdc.calculator.feature;
 
-public class FeatureForDivide extends CalcuatorFeature {
+public class FeatureForDivide extends CalculatorFeature {
 	
 	public FeatureForDivide() {
 		super(4, "Divide");
