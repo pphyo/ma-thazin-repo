@@ -5,7 +5,6 @@ import java.util.Collections;
 import java.util.List;
 
 import com.jdc.student.domain.Student;
-import static com.jdc.student.utils.ValidationHandler.*;
 
 public class StudentRepoMemImpl extends AbstractStudentRepo {
 	
