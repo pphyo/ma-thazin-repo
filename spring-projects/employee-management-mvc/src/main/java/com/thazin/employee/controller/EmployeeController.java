@@ -26,7 +26,7 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor
 public class EmployeeController {
 	
-	private final List<String> SKILLS = List.of("Communication", "Problem Solving", "Leadership", "Skills Management", "Critical Thinking", "Customer Service", "Adaptabiilty");
+	private final List<String> SKILLS = List.of("Communication", "Problem Solving", "Leadership", "Skills Management", "Critical Thinking", "Customer Service", "Adaptability");
 	
 	private final EmployeeService service;
 	private final DepartmentRepo repo;
