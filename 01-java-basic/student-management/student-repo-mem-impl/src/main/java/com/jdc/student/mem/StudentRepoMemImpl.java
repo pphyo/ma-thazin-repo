@@ -30,6 +30,7 @@ public class StudentRepoMemImpl extends AbstractStudentRepo {
 	@Override
 	public Student findById(int id) {
 		var index = findIndex(id);
+		System.out.println(index);
 		return list.get(id);
 	}
 

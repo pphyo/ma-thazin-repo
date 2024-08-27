@@ -12,8 +12,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.thazin.employee.model.SimplePayload;
 import com.thazin.employee.model.PayloadForUpdate;
+import com.thazin.employee.model.SimplePayload;
 import com.thazin.employee.model.input.DepartmentInput;
 import com.thazin.employee.model.output.DepartmentOutput;
 import com.thazin.employee.model.service.DepartmentService;

@@ -7,6 +7,7 @@ import com.thazin.employee.model.entity.Employee;
 
 public record EmployeeCriteria(String departmentName) {
 	
+	// select * from employee e join department d on e.id = d.employee_id// where 1 = 1 and lower(d.name) like lower(ACC%)
 	public Specification<Employee> where() {
 		Specification<Employee> spec = Specification.where(null);
 		

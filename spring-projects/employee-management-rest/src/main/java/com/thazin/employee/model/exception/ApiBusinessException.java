@@ -6,8 +6,7 @@ public class ApiBusinessException extends ApiBaseException {
 	
 	private static final long serialVersionUID = 1L;
 
-	public ApiBusinessException(
-			List<String> messages) {
+	public ApiBusinessException(List<String> messages) {
 		super(messages);
 	}
 
